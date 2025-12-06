@@ -25,8 +25,8 @@ def main():
         test_size=TEST_SIZE,
         random_state=RANDOM_STATE,
     )
-    # mlflow.set_tracking_uri("file:mlruns")
-    # mlflow.set_experiment("wine_quality_experiment")
+    mlflow.set_tracking_uri("file:mlruns")
+    mlflow.set_experiment("wine_quality_experiment")
 
     ## Se inicia un experimento en MLflow
     mlflow.set_experiment("wine_quality_experiment")
